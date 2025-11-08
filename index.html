@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JobProcessor & AsyncProcessor — Support</title>
+  <meta name="description" content="Support page for JobProcessor & AsyncProcessor — lightweight threading toolkit for Unity. Docs, FAQ, contact, and updates." />
+  <meta property="og:title" content="JobProcessor & AsyncProcessor — Support" />
+  <meta property="og:description" content="Lightweight threading toolkit for Unity. Get help, read FAQs, and contact support." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#111827" />
+  <style>
+    :root{
+      --bg:#0b0f19;/* slate-950 */
+      --card:#111827;/* slate-900 */
+      --ink:#e5e7eb;/* gray-200 */
+      --muted:#9ca3af;/* gray-400 */
+      --accent:#60a5fa;/* blue-400 */
+      --ring:#1f2937;/* slate-800 */
+      --ok:#34d399;/* emerald-400 */
+      --warn:#fbbf24;/* amber-400 */
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font:16px/1.6 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Noto Sans","Helvetica Neue",Arial,"Apple Color Emoji","Segoe UI Emoji";color:var(--ink);background:radial-gradient(1200px 600px at 80% -10%,#1f2937 0%,transparent 60%),var(--bg)}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:32px 20px}
+    header{display:flex;gap:20px;align-items:center;justify-content:space-between;margin-bottom:24px}
+    .brand{display:flex;gap:16px;align-items:center}
+    .brand img{width:56px;height:56px;object-fit:contain;filter:drop-shadow(0 4px 16px rgba(0,0,0,.5))}
+    .title{display:flex;flex-direction:column}
+    h1{font-size:28px;line-height:1.2;margin:0}
+    .tag{color:var(--muted);font-size:14px}
+    .cta{display:flex;flex-wrap:wrap;gap:10px}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;background:#111827;border:1px solid var(--ring);color:var(--ink)}
+    .btn:hover{border-color:#334155}
+    .btn.primary{background:linear-gradient(180deg,#2563eb,#1d4ed8);border-color:#1e40af}
+    .btn.primary:hover{filter:brightness(1.05)}
+    .grid{display:grid;gap:16px}
+    @media (min-width:900px){.grid{grid-template-columns:2fr 1fr}}
+    .card{background:var(--card);border:1px solid var(--ring);border-radius:18px;padding:18px}
+    .card h2{margin-top:0;font-size:20px}
+    code,pre{font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}
+    pre{background:#0b1220;border:1px solid #172036;border-radius:12px;padding:14px;overflow:auto}
+    ul{margin:0 0 0 18px}
+    footer{margin-top:28px;color:var(--muted);font-size:14px}
+    .kpi{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}
+    .kpi .k{background:#0d1424;border:1px solid #172036;border-radius:14px;padding:10px 12px}
+    .k .t{font-size:12px;color:#9ca3af}
+    .k .v{font-size:16px;font-weight:700}
+    .note{font-size:14px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <!-- Replace src below with your hosted logo URL (PNG/SVG). Use a white background version for best contrast. -->
+        <img src="logo.png" alt="JobProcessor logo" />
+        <div class="title">
+          <h1>JobProcessor & AsyncProcessor - Support</h1>
+          <div class="tag">Lightweight threading toolkit for Unity (since 2015)</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card">
+        <h2>Overview</h2>
+        <p><strong>JobProcessor</strong> and <strong>AsyncProcessor</strong> are battle-tested Unity scripts for simple, reliable multithreading. Offload heavy work to background threads and marshal results safely to Unity’s main thread — no scene objects required.</p>
+        <div class="kpi">
+          <div class="k"><div class="t">Platforms</div><div class="v">Mono & IL2CPP</div></div>
+          <div class="k"><div class="t">Since</div><div class="v">2015</div></div>
+          <div class="k"><div class="t">License</div><div class="v">All rights reserved</div></div>
+        </div>
+        <h3 id="features">Key features</h3>
+        <ul>
+          <li>Main-thread marshalling via <code>JobProcessor</code></li>
+          <li>Background execution via <code>AsyncProcessor</code></li>
+          <li>Precise delayed / repeating jobs (<code>QueueJob</code>)</li>
+          <li>Per-frame time quota (μs) to prevent spikes</li>
+          <li>Frame listeners to batch micro-tasks</li>
+          <li>Job cancellation (<code>CancelJob</code> / <code>CancelAllJobs</code>)</li>
+          <li>Centralized exception handling</li>
+        </ul>
+      </section>
+
+      <aside class="card">
+        <h2>Support</h2>
+        <p>Email: <a href="mailto:axion.unity@gmail.com">axion.unity@gmail.com</a></p>
+        <p>GitHub Issues: <a href="#" target="_blank" rel="noopener">repository/issues</a></p>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© 2015–2025 Sergey Zhulin. All rights reserved.</div>
+      <div>For business inquiries: <a href="mailto:axion.unity@gmail.com">axion.unity@gmail.com</a></div>
+    </footer>
+  </div>
+</body>
+</html>
